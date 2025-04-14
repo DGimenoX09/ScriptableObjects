@@ -122,6 +122,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &137065198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137065199}
+  - component: {fileID: 137065200}
+  m_Layer: 0
+  m_Name: GestorIdioma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137065199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137065198}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796751346}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137065200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137065198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7300201b0a9c9114482183c915b1775b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idiomaActual: {fileID: 11400000, guid: c50c946920cb5dc40bc49fa7b3b267c4, type: 2}
+  texto1: {fileID: 2014091290}
+  texto2: {fileID: 1161571977}
+  texto3: {fileID: 634771194}
+  texto4: {fileID: 1225875841}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +207,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -248,8 +297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 227, y: 327}
-  m_SizeDelta: {x: 429.234, y: 156.0922}
+  m_AnchoredPosition: {x: 173.50732, y: 300.00006}
+  m_SizeDelta: {x: 306.23, y: 156.0922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634771194
 MonoBehaviour:
@@ -306,7 +355,7 @@ GameObject:
   - component: {fileID: 832024219}
   - component: {fileID: 832024218}
   m_Layer: 5
-  m_Name: "BotonEspa\xF1a"
+  m_Name: "BotonEspa\xF1ol"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -374,7 +423,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 832024219}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 137065200}
+        m_TargetAssemblyTypeName: GestorIdioma, Assembly-CSharp
+        m_MethodName: CambiarIdioma
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c50c946920cb5dc40bc49fa7b3b267c4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IdiomaSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &832024219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,7 +487,7 @@ GameObject:
   - component: {fileID: 835573106}
   - component: {fileID: 835573105}
   m_Layer: 5
-  m_Name: "BotonCatalu\xF1a"
+  m_Name: BotonCatalan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,7 +555,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 835573106}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 137065200}
+        m_TargetAssemblyTypeName: GestorIdioma, Assembly-CSharp
+        m_MethodName: CambiarIdioma
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bcc7ee6e64c844d46ba5d7fd80ab3e11, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IdiomaSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &835573106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,8 +640,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -247, y: 327}
-  m_SizeDelta: {x: 429.234, y: 156.0922}
+  m_AnchoredPosition: {x: -100, y: 300}
+  m_SizeDelta: {x: 295.144, y: 156.0922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1161571977
 MonoBehaviour:
@@ -646,8 +719,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 707, y: 327}
-  m_SizeDelta: {x: 429.234, y: 156.0922}
+  m_AnchoredPosition: {x: 449, y: 300}
+  m_SizeDelta: {x: 321.9622, y: 156.0922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225875841
 MonoBehaviour:
@@ -772,7 +845,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763240427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 137065200}
+        m_TargetAssemblyTypeName: GestorIdioma, Assembly-CSharp
+        m_MethodName: CambiarIdioma
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d56be2041d026a843844d81d5d265725, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IdiomaSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1763240427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,6 +997,7 @@ RectTransform:
   - {fileID: 832024217}
   - {fileID: 835573104}
   - {fileID: 1763240425}
+  - {fileID: 137065199}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1021,8 +1107,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -701, y: 327}
-  m_SizeDelta: {x: 429.234, y: 156.0922}
+  m_AnchoredPosition: {x: -407, y: 300}
+  m_SizeDelta: {x: 264.4949, y: 156.0922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014091290
 MonoBehaviour:
